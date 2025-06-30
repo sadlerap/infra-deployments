@@ -6,6 +6,7 @@ metadata:
     app: etcd-shield
   annotations:
     ignore-check.kube-linter.io/no-anti-affinity: "using topologySpreadConstraints"
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   selector:
     matchLabels:
